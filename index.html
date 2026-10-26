@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ion-select repro</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; margin: 2rem; max-width: 46rem; }
+    table { border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.3rem 0.8rem; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    #stage { margin: 1rem 0; max-width: 20rem; }
+  </style>
+</head>
+<body>
+  <h1>ion-select repro</h1>
+  <p>
+    Pick a number of options, then click the select to open it. Each time it opens, the table shows how long that
+    took, from the click until the popover had finished presenting.
+  </p>
+  <p>
+    <button data-count="50">Use 50 options</button>
+    <button data-count="125">Use 125 options</button>
+    <button data-count="249">Use 249 options</button>
+  </p>
+  <div id="stage"></div>
+  <table>
+    <thead><tr><th>Options</th><th>Time to open</th><th>Longest frame</th></tr></thead>
+    <tbody id="results"></tbody>
+  </table>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

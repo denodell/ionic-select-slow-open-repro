@@ -1,0 +1,16 @@
+{
+  "name": "ionic-select-slow-open-repro",
+  "private": true,
+  "type": "module",
+  "description": "Shows that ion-select takes much longer to open as its list of options grows.",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@ionic/core": "9.0.7"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}
