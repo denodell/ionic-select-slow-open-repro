@@ -9,11 +9,11 @@ npm install
 npm start
 ```
 
-Then open the page it serves, pick 50, 125 or 249 options, and click the select to open it. The table shows how long it took from the click until the popover had finished presenting, and the longest frame while it opened.
+Then open the page it serves, pick 50, 125 or 250 options, and click the select to open it. The table shows how long it took from the click until the popover had finished presenting, and the longest frame while it opened.
 
 ## What you'll see
 
-With the CPU slowed down 4x, opening it with 249 options takes four to five times as long as with 50, and most of that time the page is unresponsive.
+With the CPU slowed down 4x, opening it with 250 options takes four to five times as long as with 50, and most of that time the page is unresponsive.
 
 ## Where it comes from
 
