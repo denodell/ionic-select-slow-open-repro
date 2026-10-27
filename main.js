@@ -33,7 +33,6 @@ function build(n) {
   stage.append(select);
 }
 
-// Start timing when the click begins, and record any frame over 50ms until the popover has presented.
 document.addEventListener("pointerdown", (event) => {
   if (!event.target.closest("ion-select")) return;
   start = performance.now();
