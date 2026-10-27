@@ -13,7 +13,7 @@ Then open the page it serves, pick 50, 125 or 249 options, and click the select 
 
 ## What you'll see
 
-On an M1 Pro MacBook Pro in Chrome 155, with the CPU slowed down 4x, opening it took 203ms with 50 options and 1,266ms with 249, and the page was unresponsive for 1,133ms of that.
+With the CPU slowed down 4x, opening it with 249 options takes four to five times as long as with 50, and most of that time the page is unresponsive.
 
 ## Where it comes from
 
