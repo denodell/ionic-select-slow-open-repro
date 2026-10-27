@@ -45,7 +45,8 @@ document.addEventListener("ionPopoverDidPresent", async () => {
   await nextFrame();
   await nextFrame();
   const ms = performance.now() - start;
-  await new Promise((resolve) => setTimeout(resolve, 100));
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  if (observer) frames.push(...observer.takeRecords().map((f) => f.duration));
   observer.disconnect();
   const longest = Math.max(0, ...frames);
   document.getElementById("results").insertAdjacentHTML("beforeend",
